@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 3 — Semantic HTML with CSS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header, nav, main, section, article, aside, footer {
+      border: 1px solid #ccc;
+      margin: 10px;
+      padding: 10px;
+    }
+
+    header {
+      background: #f2f2f2;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    main {
+      display: flex;
+    }
+
+    section {
+      flex: 3;
+    }
+
+    aside {
+      flex: 1;
+      background: #f9f9f9;
+    }
+
+    footer {
+      background: #f2f2f2;
+      text-align: center;
+    }
+
+    .highlight {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>My Blog</h1>
+    <nav>
+      <a href="#">Home</a> |
+      <a href="#">About</a> |
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <section>
+      <h2>Latest Articles</h2>
+      <article>
+        <h3>What is HTML?</h3>
+        <p>HTML is the <span class="highlight">standard markup language</span> for creating webpages.</p>
+      </article>
+      <article>
+        <h3>Why use Semantic Tags?</h3>
+        <p>They make your code more <span class="highlight">meaningful</span> and better for search engines.</p>
+      </article>
+    </section>
+
+    <aside>
+      <h3>Sidebar</h3>
+      <p>Extra info shown on the side.</p>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p>&copy; 2025 My Blog. All rights reserved.</p>
+  </footer>
+
+  <!-- Div and Span Examples -->
+  <div>
+    <h2>Div Example</h2>
+    <p>This whole block is inside a <b>div</b> tag.</p>
+  </div>
+
+  <p>This is <span class="highlight">span example</span> inside a paragraph.</p>
+</body>
+</html>
